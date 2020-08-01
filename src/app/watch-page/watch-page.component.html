@@ -1,0 +1,116 @@
+<div class="container-fluid jk-no-margin">
+    <div class="row">
+        <div class="col-12">
+            <div class="container-fluid jk-no-margin">
+                <div class="row jk-bg-black" style="margin-top: 1%; margin-right: 1%;">
+                    <div class="col-12">
+                        <div class="jk-section-header">
+                            <div class="jk-section-title">
+                                <div class="jk-section-title-icon">
+                                    <i class="fas fa-video"></i>
+                                </div>
+                                <h6>{{animeSlug}}</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-7">
+                        <!-- PLACEHOLDER -->
+                        <div style="width: 100%; min-height: 350px; background-color: #000;"></div>
+                        <!-- END OF PLACEHOLDER -->
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-5">
+                        <div class="jk-config-block">
+                            <div class="jk-config-block-header">
+                                <h6>Servers</h6>
+                            </div>
+                            <div class="jk-config-content">
+                                <button class="jk-config-button jk-config-button-active">Server 1</button>
+                                <button class="jk-config-button">Server 2</button>
+                            </div>
+                        </div>
+                        <div class="jk-config-block">
+                            <div class="jk-config-block-header">
+                                <h6>Episodes</h6>
+                            </div>
+                            <div class="jk-config-content">
+                                <button class="jk-config-button jk-config-button-active">1</button>
+                                <button class="jk-config-button">2</button>
+                                <button class="jk-config-button">3</button>
+                                <button class="jk-config-button">4</button>
+                            </div>
+                        </div>
+                        <div class="jk-config-block">
+                            <div class="jk-config-block-header">
+                                <h6>Video</h6>
+                            </div>
+                            <div class="jk-config-content">
+                                <button class="jk-config-button">Mark as watched</button>
+                                <button class="jk-config-button">Bookmark</button>
+                                <button class="jk-config-button">Report</button>
+                            </div>
+                        </div>
+                        <div class="jk-config-block">
+                            <div class="jk-config-block-header">
+                                <h6>Other</h6>
+                            </div>
+                            <div class="jk-config-content">
+                                <button class="jk-config-button">Download</button>
+                                <button class="jk-config-button">Share</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="jk-comments-section">
+                            <div class="jk-comments-wrap">
+                                <div class="jk-comments-list">
+                                    <div class="jk-comment" *ngIf="comments.length == 0">
+                                        <div class="jk-comment-avatar">
+                                            <i class="icon icon-bell"></i>
+                                        </div>
+                                        <div class="jk-comment-content">
+                                            <div class="jk-comment-user">
+                                                <p>Hey there!</p>
+                                            </div>
+
+                                            <div class="jk-comment-content-text">
+                                                <p>This episode doesn't have any comments yet!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="jk-comment" *ngFor="let comment of comments">
+                                        <div class="jk-comment-avatar">
+                                            <img src="{{comment.avatar}}" />
+                                        </div>
+                                        <div class="jk-comment-content">
+                                            <div class="jk-comment-user">
+                                                <p>{{comment.user}}</p>
+                                                <div class="jk-comment-actions">
+                                                    <div class="jk-comment-action">
+                                                        <i class="icon icon-edit"></i>
+                                                    </div>
+                                                    <div class="jk-comment-action" (click)="deleteComment(comment.id)">
+                                                        <i class="icon icon-trash"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="jk-comment-content-text">
+                                                <p>{{comment.text}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="jk-input-section">
+                                <div class="jk-comment-input-wrap">
+                                    <input value="{{commentText}}" type="text" class="jk-comment-input"
+                                        (keyup.enter)="addComment($event.target.value)" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

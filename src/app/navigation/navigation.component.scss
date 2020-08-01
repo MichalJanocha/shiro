@@ -1,0 +1,192 @@
+@import "styles";
+
+.jk-navbar {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    width: 6rem;
+    -moz-box-shadow: inset -6px 0px 7px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset -6px 0px 7px rgba(0, 0, 0, 0.1);
+    box-shadow: inset -6px 0px 7px rgba(0, 0, 0, 0.1);
+    z-index: 999999;
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        z-index: 9999;
+    }
+
+    &__item {
+        text-align: center;
+        color: #fff;
+        display: flex;
+        flex-flow: column;
+        min-width: 100%;
+        transition: all 0.2s;
+
+        i {
+            font-size: 1.5rem;
+            margin-top: 12px;
+        }
+
+        span {
+            font-size: 0.75rem;
+            font-weight: 300;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            opacity: 0.6;
+            color: #fff;
+        }
+
+        &--hover:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+            opacity: 1;
+            cursor: pointer;
+            color: $mainAccentColor;
+        }
+
+        &--hover:hover i {
+            text-shadow: 0 2px 5px rgba(233, 22, 22, 0.5);
+        }
+
+        &--specialHover:hover .jk-navbar__avatar {
+            -webkit-box-shadow: 0 5px 11px 1px rgba(233, 22, 22, 0.5);
+            box-shadow: 0 5px 11px 1px rgba(233, 22, 22, 0.5);
+            border: 1px solid $mainAccentColor;
+        }
+
+        &--smallOpacity {
+            opacity: 0.3;
+        }
+
+        &--stickBottom {
+            margin-top: auto;
+        }
+
+        &:nth-child(1) {
+
+            img {
+                max-width: 70%;
+                height: auto;
+                margin: 20px auto 20px auto;
+            }
+        }
+    }
+
+    &__avatar {
+        width: 40px;
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50px;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.2s;
+
+        &__img {
+            width: 100%;
+            height: auto;
+            margin: 0;
+            // position: absolute;
+            // left: 0;
+            // top: -25%;
+        }
+    }
+}
+
+.jk-navbar-margin {
+    margin-left: 7rem;
+}
+
+.jk-navbar-padding {
+    width: 7rem;
+}
+
+.jk-nav-item-active {
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    cursor: pointer;
+    color: $mainAccentColor;
+}
+
+///////////////////
+.jk-navbar-dropdown {
+    position: fixed;
+    left: 6rem;
+    z-index: 99999;
+    height: 100vh;
+    background-color: rgba(33, 33, 33, 1);
+    min-width: 20%;
+    -webkit-box-shadow: 5px 0 8px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 0 8px 2px rgba(0, 0, 0, 0.2);
+
+    .jk-dropdown-header {
+        h5 {
+            opacity: 0.8;
+        }
+
+        p {
+            color: #fff;
+            opacity: 0.4;
+            font-size: 0.8rem;
+            font-weight: 300;
+        }
+    }
+
+    .jk-navbar-dropdown-wrapper {
+        padding: 40px;
+    }
+
+    .jk-dropdown-content {
+        margin-top: 25px;
+    }
+
+    ul {
+        padding: 0;
+        list-style: none;
+
+        li {
+            color: rgba(123, 123, 123, 1);
+            width: 100%;
+            border: 1px solid rgba(43, 43, 43, 1);
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-weight: 400;
+            font-size: 0.8rem;
+            padding: 8px;
+            transition: all 0.2s;
+
+            &:hover {
+                color: rgba(244, 244, 244, 1);
+                border-color: $mainAccentColor;
+                cursor: pointer;
+                padding-left: 13px;
+            }
+        }
+    }
+
+    .jk-dropdown-close {
+        button {
+            width: 100%;
+            outline: none;
+            border: 1px solid $mainAccentColor;
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 300;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            transition: all 0.2s;
+            background-color: transparent;
+
+            &:hover {
+                background-color: $mainAccentColor;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+<div class="container-fluid jk-no-margin">
+    <div class="row jk-bg-black" style="margin-top: 1%; margin-left: 2%; margin-right: 2%;">
+        <div class="col-12">
+            <div class="jk-section-header">
+                <div class="jk-section-title">
+                    <div class="jk-section-title-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h6>Leaderboard</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div id="animWrap" class="jk-anime-wrapper">
+                <div class="container-fluid jk-no-margin">
+                    <div class="row">
+                        <div class="col-12">
+                            <app-list [listCols]="{cols: ['s', 'i', 'Name', 'Messages', 'Experience', 'Level']}"
+                                [getDataFrom]="'users'">
+                            </app-list>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

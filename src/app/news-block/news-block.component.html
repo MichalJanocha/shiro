@@ -1,0 +1,25 @@
+<div class="jk-vid-block">
+    <div class="jk-section-title">
+        <div class="jk-section-title-icon" *ngIf="label">
+            <i class="{{ icon }}"></i>
+        </div>
+        <h6>{{ label }}</h6>
+    </div>
+    <div class="jk-vid-bg" *ngIf="video">
+        <video controls="controls" class="jk-video-player" x-webkit-airplay="allow" data-youtube-id="N9oxmRT2YWw"
+            src="{{video}}"></video>
+    </div>
+    <div class="jk-vid-bg">
+        <img src="assets/img/navbar_bg2.jpg" class=" " />
+    </div>
+    <div class="jk-vid-content">
+        <h4 *ngIf="title">{{ title }}</h4>
+    </div>
+    <div class="jk-vid-details" *ngIf="buttons.length > 0">
+        <ul>
+            <li *ngFor="let button of buttons">
+                {{button}}
+            </li>
+        </ul>
+    </div>
+</div>

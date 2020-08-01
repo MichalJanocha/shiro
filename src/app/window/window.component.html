@@ -1,0 +1,45 @@
+<div id="animWrap" class="jk-anime-wrapper" *ngIf="rnSection">
+    <div class="container-fluid jk-no-margin">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="jk-randomize-section">
+                    <p class="p-white">All Categories</p>
+                    <button><i class="fas fa-redo-alt"></i></button>
+                </div>
+                <div class="jk-anime-block jk-100-perc">
+                    <div class="jk-anime-block-bg">
+                        <img src="assets/img/navbar_bg2.jpg" />
+                    </div>
+                    <div class="jk-anime-block-content">
+                        <div class="jk-time">
+                            <i class="far fa-clock"></i>
+                            <p>3 hours ago</p>
+                        </div>
+                        <div class="jk-anime-block-text">
+                            <h6>Black Clover1</h6>
+                            <p>Episode 74</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="animWrap" class="jk-anime-wrapper" *ngIf="!rnSection">
+    <div class="jk-anime-block" [routerLink]="['/watch/','black-clover-1', '84']">
+        <div class="jk-anime-block-bg">
+            <img src="assets/img/navbar_bg2.jpg" />
+        </div>
+        <div class="jk-anime-block-content">
+            <div class="jk-time">
+                <i class="far fa-clock"></i>
+                <p>3 hours ago</p>
+            </div>
+            <div class="jk-anime-block-text">
+                <h6>Black Clover1</h6>
+                <p>Episode 74</p>
+            </div>
+        </div>
+    </div>
+</div>

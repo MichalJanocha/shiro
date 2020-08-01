@@ -1,0 +1,59 @@
+<div class="jk-navbar-container">
+    <div class="jk-navbar">
+        <ul class="jk-navbar__list">
+            <li routerLink="/home" class="jk-navbar__item">
+                <img src="assets/img/shiro.png" />
+            </li>
+            <li routerLink="/home" [routerLinkActive]="['jk-nav-item-active']" [routerLinkActiveOptions]="{exact: true}"
+                class="jk-navbar__item jk-navbar__item--smallOpacity jk-navbar__item--hover">
+                <i class="icon icon-home"></i>
+                <span>Home</span>
+            </li>
+            <li (click)="toggleDropdown()" routerLink="/category" [routerLinkActive]="['jk-nav-item-active']"
+                [routerLinkActiveOptions]="{exact: true}"
+                class="jk-navbar__item jk-navbar__item--smallOpacity jk-navbar__item--hover">
+                <i class="icon icon-camera"></i>
+                <span>Anime</span>
+            </li>
+            <li routerLink="/ranking" [routerLinkActive]="['jk-nav-item-active']"
+                [routerLinkActiveOptions]="{exact: true}"
+                class="jk-navbar__item jk-navbar__item--smallOpacity jk-navbar__item--hover">
+                <i class="icon icon-crown"></i>
+                <span>Leaderboard</span>
+            </li>
+            <li routerLink="/search" [routerLinkActive]="['jk-nav-item-active']"
+                [routerLinkActiveOptions]="{exact: true}"
+                class="jk-navbar__item jk-navbar__item--smallOpacity jk-navbar__item--hover">
+                <i class="icon icon-search"></i>
+                <span>Search</span>
+            </li>
+            <li routerLink="/account" [routerLinkActive]="['jk-nav-item-active']"
+                [routerLinkActiveOptions]="{exact: true}"
+                class="jk-navbar__item jk-navbar__item--stickBottom jk-navbar__item--specialHover">
+                <div class="jk-navbar__avatar">
+                    <img src="https://miro.medium.com/max/720/1*W35QUSvGpcLuxPo3SRTH4w.png"
+                        class="jk-navbar__avatar__img" />
+                </div>
+                <span>Profile</span>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="jk-navbar-dropdown" [@dropdownState]="animeState">
+    <div class="jk-navbar-dropdown-wrapper">
+        <div class="jk-dropdown-header">
+            <h5>Anime</h5>
+            <p>What do you want to do?</p>
+        </div>
+        <div class="jk-dropdown-content">
+            <ul>
+                <li routerLink="/category/anime">Anime</li>
+                <li routerLink="/category/manga">Manga</li>
+                <li routerLink="/category/anime">Movies</li>
+            </ul>
+        </div>
+        <div class="jk-dropdown-close">
+            <button (click)="toggleDropdown()">Close</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,126 @@
+<div class="container-fluid jk-no-margin">
+    <div class="row jk-body" style="margin-right: 1%;">
+        <div class="col-md-7 col-12">
+            <app-news-block [blockData]="b1Data" class="jk-vid-block"></app-news-block>
+        </div>
+        <div class="col-md-5 col-12">
+            <app-news-block [blockData]="b2Data" class="jk-vid-block"></app-news-block>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="container-fluid jk-no-margin">
+                <div class="row jk-bg-black" style="margin-top: 1%; margin-right: 1%;">
+                    <div class="col-12">
+                        <div class="jk-section-header">
+                            <div class="jk-section-title">
+                                <div class="jk-section-title-icon">
+                                    <i class="fas fa-video"></i>
+                                </div>
+                                <h6>Released episodes</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <app-window></app-window>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="container-fluid jk-no-margin">
+                <div class="row jk-bg-black" style="margin-top: 1%; margin-right: 1%;">
+                    <div class="col-12">
+                        <div class="jk-section-header">
+                            <div class="jk-section-title">
+                                <div class="jk-section-title-icon">
+                                    <i class="fas fa-video"></i>
+                                </div>
+                                <h6>You dont know what to watch?</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div id="animWrap" class="jk-anime-wrapper">
+                            <div class="container-fluid jk-no-margin">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="jk-randomize-section">
+                                            <p class="p-white" style="margin: 2% 0 2%;">Trending anime
+                                            </p>
+                                        </div>
+                                        <app-list [listCols]="{cols: ['Number', 'Title ', 'Views']}"
+                                            [getDataFrom]="'anime'">
+                                        </app-list>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <app-window [rnSection]=true></app-window>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-right: 1%;">
+        <div class="col-lg-6 col-12" style="margin-top:1%;">
+            <div class="container-fluid">
+                <div class="row jk-bg-black">
+                    <div class="col-12">
+                        <div class="jk-section-header">
+                            <div class="jk-section-title">
+                                <div class="jk-section-title-icon">
+                                    <i class="fas fa-video"></i>
+                                </div>
+                                <h6>Statistics</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div id="animWrap" class="jk-anime-wrapper">
+                            <div class="container-fluid jk-no-margin">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <app-statistics></app-statistics>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-12" style="margin-top: 1%;">
+            <div class="container-fluid">
+                <div class="row jk-bg-black">
+                    <div class="col-12">
+                        <div class="jk-section-header">
+                            <div class="jk-section-title">
+                                <div class="jk-section-title-icon">
+                                    <i class="fas fa-video"></i>
+                                </div>
+                                <h6>Shiro's Blog</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div id="animWrap" class="jk-anime-wrapper">
+                            <div class="container-fluid jk-no-margin">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <app-shiro-blog-block></app-shiro-blog-block>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
