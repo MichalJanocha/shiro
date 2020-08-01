@@ -1,0 +1,57 @@
+@import "navigation/navigation.component.scss";
+
+.jk-custom-loader {
+    position: absolute;
+    background-color: #1c1c1c;
+    left: 0;
+    top: 0;
+    z-index: 55;
+    width: 100vw;
+    height: 100vh;
+}
+
+.jk-loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: $mainAccentColor;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    animation: rotate 1s linear infinite;
+
+    &:after {
+        content: ' ';
+        position: absolute;
+        left: -70px;
+        top: 50%;
+        background-color: $mainAccentColor;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+
+    }
+
+    &:before {
+        content: ' ';
+        position: absolute;
+        left: 70px;
+        top: 50%;
+        background-color: $mainAccentColor;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
