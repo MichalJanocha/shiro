@@ -1,0 +1,93 @@
+
+<ion-split-pane when="md" contentId="menu-content-id" class="jk-menu-split">
+  <ion-menu menuId="main-menu" contentId="menu-content-id" class="jk-menu-container">
+    <div class="jk-menu-header">
+      <ion-img src="assets/icon/shiro.png"></ion-img>
+      <div class="jk-app-version">
+        <p>1.0.0</p>
+      </div>
+    </div>
+    <ion-toolbar class="jk-main-nav ion-wrap">
+      <ion-buttons class="ion-wrap">
+        <ion-tab-button [routerLink]="['/page/home']">
+          <ion-icon name="home-outline" color="primary"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/page/sign']">
+          <ion-icon name="person-circle" color="primary"></ion-icon>
+          <ion-label>Sign in</ion-label>
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/page/sign']">
+          <ion-icon name="person-circle" color="primary"></ion-icon>
+          <ion-label>Sign in</ion-label>
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/page/sign']">
+          <ion-icon name="person-circle" color="primary"></ion-icon>
+          <ion-label>Sign in</ion-label>
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/page/sign']">
+          <ion-icon name="person-circle" color="primary"></ion-icon>
+          <ion-label>Sign in</ion-label>
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/page/sign']">
+          <ion-icon name="person-circle" color="primary"></ion-icon>
+          <ion-label>Sign in</ion-label>
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/page/sign']">
+          <ion-icon name="person-circle" color="primary"></ion-icon>
+          <ion-label>Sign in</ion-label>
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/page/sign']">
+          <ion-icon name="person-circle" color="primary"></ion-icon>
+          <ion-label>Sign in</ion-label>
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/page/sign']">
+          <ion-icon name="person-circle" color="primary"></ion-icon>
+          <ion-label>Sign in</ion-label>
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/page/sign']">
+          <ion-icon name="person-circle" color="primary"></ion-icon>
+          <ion-label>Sign in</ion-label>
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/page/sign']">
+          <ion-icon name="person-circle" color="primary"></ion-icon>
+          <ion-label>Sign in</ion-label>
+        </ion-tab-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-menu>
+
+  <ion-content id="menu-content-id">
+      <ion-grid>
+        <ion-row>
+          <ion-col size-xs="12">
+            <ion-toolbar class="jk-app-content-header">
+              <ion-buttons slot="start">
+                <ion-menu-toggle menu="main-menu">
+                  <ion-button color="primary" size="large" shape="round">
+                    <ion-icon name="menu"></ion-icon>
+                  </ion-button>
+                </ion-menu-toggle>
+                <ion-button>
+                  <ion-icon slot="start" name="home" color="primary"></ion-icon>
+                  <label>Home</label>
+                </ion-button>
+              </ion-buttons>
+              <ion-buttons slot="secondary">
+                <ion-button class="ion-text-right" (click)="openUser($event)">
+                  <ion-avatar slot="icon-only" class="jk-user-avatar">
+                    <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+                  </ion-avatar>
+                  <label>Sign in</label>
+                </ion-button>
+                <ion-button color="primary" (click)="openNotifications($event)">
+                  <ion-icon slot="icon-only" name="notifications-outline"></ion-icon>
+                </ion-button>
+              </ion-buttons>
+            </ion-toolbar>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-router-outlet style="margin-top: 5rem;"></ion-router-outlet>
+  </ion-content>
+</ion-split-pane>

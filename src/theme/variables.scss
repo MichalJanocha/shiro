@@ -2,14 +2,30 @@
 // http://ionicframework.com/docs/theming/
 
 /** Ionic CSS Variables **/
+@font-face {
+  font-family: PTSans;
+  src: url("../assets/font/PTSans-Regular.ttf"); //change url accordingly
+}
+
+body{
+  font-family: 'PT Sans', sans-serif;
+}
+
 :root {
+
+  --ion-font-family: 'PTSans';
+
+  /* SHIRO */
+  --shiro-color-dark: #0f0f0f;
+  --ion-text-color: #b6b6b6;
+
   /** primary **/
-  --ion-color-primary: #3880ff;
-  --ion-color-primary-rgb: 56, 128, 255;
+  --ion-color-primary: #e12939;
+  --ion-color-primary-rgb: 255, 41, 57;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #3171e0;
-  --ion-color-primary-tint: #4c8dff;
+  --ion-color-primary-shade: #ca2433;
+  --ion-color-primary-tint: #e43e4c;
 
   /** secondary **/
   --ion-color-secondary: #3dc2ff;
