@@ -158,7 +158,6 @@ let WatchPageComponent = class WatchPageComponent {
     }
     ngOnInit() {
         const animeSlug = this.router.snapshot.paramMap.get("slug");
-        this.animeServ.fetchAnimeSources(animeSlug).subscribe();
     }
     segmentChanged(event) {
         this.currentSelection = event.detail.value;

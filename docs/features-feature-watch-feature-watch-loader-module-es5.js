@@ -276,7 +276,6 @@
           key: "ngOnInit",
           value: function ngOnInit() {
             var animeSlug = this.router.snapshot.paramMap.get("slug");
-            this.animeServ.fetchAnimeSources(animeSlug).subscribe();
           }
         }, {
           key: "segmentChanged",
