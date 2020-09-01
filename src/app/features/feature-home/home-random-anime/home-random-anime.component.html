@@ -1,0 +1,29 @@
+<ion-grid>
+  <ion-row>
+    <ion-col size-xs="12" *ngIf="currentAnime">
+      <ion-toolbar>
+          <ion-buttons slot="secondary">
+              <ion-button size="large" shape="round" (click)="getRandomAnime()">
+                  <ion-icon slot="icon-only" color="primary" name="shuffle-outline"></ion-icon>
+              </ion-button>
+          </ion-buttons>
+          <ion-title>Random Anime</ion-title>
+      </ion-toolbar>
+    </ion-col>
+    <ion-col size-xs="12" class="shiro-random-col">
+      <div class="shiro-random-card">
+        <div class="shiro-card-header">
+          <img src="https://static.posters.cz/image/750/plakaty/death-note-collage-i28406.jpg" class="shiro-img"/>
+        </div>
+        <div class="shiro-card-content">
+          <h4>{{currentAnime?.name}}</h4>
+          <div class="shiro-card-genres">
+            <ion-badge>Anime</ion-badge>
+            <ion-badge>Dark</ion-badge>
+          </div>
+          <p>{{currentAnime?.description}}</p>
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>

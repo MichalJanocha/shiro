@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AnimeService } from '@app/data-access/services/anime.service';
 import { Anime } from '@app/data-access/models/Anime.model';
+import { Observable } from 'rxjs';
 
 
 @Component({
@@ -10,16 +11,14 @@ import { Anime } from '@app/data-access/models/Anime.model';
 })
 export class HomePageComponent implements OnInit {
 
-  allAnimes : Anime[];
+  allAnimes$ : Observable<Anime[]>;
+  fewAnimes$ : Observable<Anime[]>;
 
   constructor(private readonly animeServ: AnimeService) { }
 
   ngOnInit(): void {
-    this.animeServ.fetch20Animes().pipe().subscribe(data => {
-      this.allAnimes = data;
-      console.log(data);
-    })
-
+    this.allAnimes$ = this.animeServ.fetchAllAnime();
+    this.fewAnimes$ = this.animeServ.fetch20Animes();
   }
 
 }

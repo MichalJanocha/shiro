@@ -1,0 +1,552 @@
+(function () {
+  function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+  function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+  (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["features-feature-layout-feature-layout-loader-module"], {
+    /***/
+    "./node_modules/raw-loader/dist/cjs.js!./src/app/features/feature-layout/layout-notifications/layout-notifications.component.html":
+    /*!****************************************************************************************************************************************!*\
+      !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/features/feature-layout/layout-notifications/layout-notifications.component.html ***!
+      \****************************************************************************************************************************************/
+
+    /*! exports provided: default */
+
+    /***/
+    function node_modulesRawLoaderDistCjsJsSrcAppFeaturesFeatureLayoutLayoutNotificationsLayoutNotificationsComponentHtml(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony default export */
+
+
+      __webpack_exports__["default"] = "<ion-list>\n    <ion-item>\n        <ion-icon name=\"notifications-outline\" slot=\"start\" color=\"primary\"></ion-icon>\n        <ion-label>Hey! Welcome on Shiro.is, the best anime app!</ion-label>\n    </ion-item>\n    <ion-item>\n        <ion-icon name=\"notifications-outline\" slot=\"start\" color=\"primary\"></ion-icon>\n        <ion-text>Hey! Welcome on Shiro.is, the best anime app!</ion-text>\n    </ion-item>\n    <ion-item>\n        <ion-icon name=\"notifications-outline\" slot=\"start\" color=\"primary\"></ion-icon>\n        <ion-text>Hey! Welcome on Shiro.is, the best anime app!</ion-text>\n    </ion-item>\n    <ion-item>\n        <ion-icon name=\"notifications-outline\" slot=\"start\" color=\"primary\"></ion-icon>\n        <ion-text>Hey! Welcome on Shiro.is, the best anime app!</ion-text>\n    </ion-item>\n</ion-list>";
+      /***/
+    },
+
+    /***/
+    "./node_modules/raw-loader/dist/cjs.js!./src/app/features/feature-layout/layout-page/feature-layout.component.html":
+    /*!*************************************************************************************************************************!*\
+      !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/features/feature-layout/layout-page/feature-layout.component.html ***!
+      \*************************************************************************************************************************/
+
+    /*! exports provided: default */
+
+    /***/
+    function node_modulesRawLoaderDistCjsJsSrcAppFeaturesFeatureLayoutLayoutPageFeatureLayoutComponentHtml(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony default export */
+
+
+      __webpack_exports__["default"] = "\n<ion-split-pane when=\"md\" contentId=\"menu-content-id\" class=\"jk-menu-split\">\n  <ion-menu menuId=\"main-menu\" contentId=\"menu-content-id\" class=\"jk-menu-container\">\n    <div class=\"jk-menu-header\">\n      <ion-img src=\"assets/icon/shiro.png\"></ion-img>\n      <div class=\"jk-app-version\">\n        <p>1.0.0</p>\n      </div>\n    </div>\n    <ion-toolbar class=\"jk-main-nav ion-wrap\">\n      <ion-buttons class=\"ion-wrap\">\n        <ion-tab-button [routerLink]=\"['/page/home']\">\n          <ion-icon name=\"home-outline\" color=\"primary\"></ion-icon>\n          <ion-label>Home</ion-label>\n        </ion-tab-button>\n        <ion-tab-button [routerLink]=\"['/page/sign']\">\n          <ion-icon name=\"person-circle\" color=\"primary\"></ion-icon>\n          <ion-label>Sign in</ion-label>\n        </ion-tab-button>\n        <ion-tab-button [routerLink]=\"['/page/sign']\">\n          <ion-icon name=\"person-circle\" color=\"primary\"></ion-icon>\n          <ion-label>Sign in</ion-label>\n        </ion-tab-button>\n        <ion-tab-button [routerLink]=\"['/page/sign']\">\n          <ion-icon name=\"person-circle\" color=\"primary\"></ion-icon>\n          <ion-label>Sign in</ion-label>\n        </ion-tab-button>\n        <ion-tab-button [routerLink]=\"['/page/sign']\">\n          <ion-icon name=\"person-circle\" color=\"primary\"></ion-icon>\n          <ion-label>Sign in</ion-label>\n        </ion-tab-button>\n        <ion-tab-button [routerLink]=\"['/page/sign']\">\n          <ion-icon name=\"person-circle\" color=\"primary\"></ion-icon>\n          <ion-label>Sign in</ion-label>\n        </ion-tab-button>\n        <ion-tab-button [routerLink]=\"['/page/sign']\">\n          <ion-icon name=\"person-circle\" color=\"primary\"></ion-icon>\n          <ion-label>Sign in</ion-label>\n        </ion-tab-button>\n        <ion-tab-button [routerLink]=\"['/page/sign']\">\n          <ion-icon name=\"person-circle\" color=\"primary\"></ion-icon>\n          <ion-label>Sign in</ion-label>\n        </ion-tab-button>\n        <ion-tab-button [routerLink]=\"['/page/sign']\">\n          <ion-icon name=\"person-circle\" color=\"primary\"></ion-icon>\n          <ion-label>Sign in</ion-label>\n        </ion-tab-button>\n        <ion-tab-button [routerLink]=\"['/page/sign']\">\n          <ion-icon name=\"person-circle\" color=\"primary\"></ion-icon>\n          <ion-label>Sign in</ion-label>\n        </ion-tab-button>\n        <ion-tab-button [routerLink]=\"['/page/sign']\">\n          <ion-icon name=\"person-circle\" color=\"primary\"></ion-icon>\n          <ion-label>Sign in</ion-label>\n        </ion-tab-button>\n      </ion-buttons>\n    </ion-toolbar>\n  </ion-menu>\n\n  <ion-content id=\"menu-content-id\">\n      <ion-grid>\n        <ion-row>\n          <ion-col size-xs=\"12\">\n            <ion-toolbar class=\"jk-app-content-header\">\n              <ion-buttons slot=\"start\">\n                <ion-menu-toggle menu=\"main-menu\">\n                  <ion-button color=\"primary\" size=\"large\" shape=\"round\">\n                    <ion-icon name=\"menu\"></ion-icon>\n                  </ion-button>\n                </ion-menu-toggle>\n                <ion-button>\n                  <ion-icon slot=\"start\" name=\"home\" color=\"primary\"></ion-icon>\n                  <label>Home</label>\n                </ion-button>\n              </ion-buttons>\n              <ion-buttons slot=\"secondary\">\n                <ion-button class=\"ion-text-right\" (click)=\"openUser($event)\">\n                  <ion-avatar slot=\"icon-only\" class=\"jk-user-avatar\">\n                    <img src=\"https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y\">\n                  </ion-avatar>\n                  <label>Sign in</label>\n                </ion-button>\n                <ion-button color=\"primary\" (click)=\"openNotifications($event)\">\n                  <ion-icon slot=\"icon-only\" name=\"notifications-outline\"></ion-icon>\n                </ion-button>\n              </ion-buttons>\n            </ion-toolbar>\n          </ion-col>\n        </ion-row>\n      </ion-grid>\n      <ion-router-outlet style=\"margin-top: 5rem;\"></ion-router-outlet>\n  </ion-content>\n</ion-split-pane>";
+      /***/
+    },
+
+    /***/
+    "./node_modules/raw-loader/dist/cjs.js!./src/app/features/feature-layout/layout-user/layout-user.component.html":
+    /*!**********************************************************************************************************************!*\
+      !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/features/feature-layout/layout-user/layout-user.component.html ***!
+      \**********************************************************************************************************************/
+
+    /*! exports provided: default */
+
+    /***/
+    function node_modulesRawLoaderDistCjsJsSrcAppFeaturesFeatureLayoutLayoutUserLayoutUserComponentHtml(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony default export */
+
+
+      __webpack_exports__["default"] = "<ion-list>\n    <ion-list>\n        <ion-item>\n          <ion-label>Login</ion-label>\n          <ion-input></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-label>Password</ion-label>\n            <ion-input></ion-input>\n        </ion-item>\n        <ion-item>\n            <ion-button expand=\"block\">Sign in</ion-button>\n        </ion-item>\n      </ion-list>\n</ion-list>";
+      /***/
+    },
+
+    /***/
+    "./src/app/features/feature-layout/feature-layout.loader.module.ts":
+    /*!*************************************************************************!*\
+      !*** ./src/app/features/feature-layout/feature-layout.loader.module.ts ***!
+      \*************************************************************************/
+
+    /*! exports provided: FeatureLayoutLoaderModule */
+
+    /***/
+    function srcAppFeaturesFeatureLayoutFeatureLayoutLoaderModuleTs(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony export (binding) */
+
+
+      __webpack_require__.d(__webpack_exports__, "FeatureLayoutLoaderModule", function () {
+        return FeatureLayoutLoaderModule;
+      });
+      /* harmony import */
+
+
+      var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! tslib */
+      "./node_modules/tslib/tslib.es6.js");
+      /* harmony import */
+
+
+      var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      /*! @angular/core */
+      "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+      /* harmony import */
+
+
+      var _layout_page_feature_layout_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! ./layout-page/feature-layout.component */
+      "./src/app/features/feature-layout/layout-page/feature-layout.component.ts");
+      /* harmony import */
+
+
+      var _feature_layout_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      /*! ./feature-layout.routing.module */
+      "./src/app/features/feature-layout/feature-layout.routing.module.ts");
+      /* harmony import */
+
+
+      var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+      /*! @ionic/angular */
+      "./node_modules/@ionic/angular/__ivy_ngcc__/fesm2015/ionic-angular.js");
+      /* harmony import */
+
+
+      var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+      /*! @angular/common */
+      "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+      /* harmony import */
+
+
+      var _layout_user_layout_user_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+      /*! ./layout-user/layout-user.component */
+      "./src/app/features/feature-layout/layout-user/layout-user.component.ts");
+      /* harmony import */
+
+
+      var _layout_notifications_layout_notifications_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+      /*! ./layout-notifications/layout-notifications.component */
+      "./src/app/features/feature-layout/layout-notifications/layout-notifications.component.ts");
+
+      var MODULES = [_feature_layout_routing_module__WEBPACK_IMPORTED_MODULE_3__["FeatureLayoutRoutingModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["CommonModule"]];
+      var COMPONENTS = [_layout_page_feature_layout_component__WEBPACK_IMPORTED_MODULE_2__["FeatureLayoutComponent"], _layout_user_layout_user_component__WEBPACK_IMPORTED_MODULE_6__["LayoutUserComponent"], _layout_notifications_layout_notifications_component__WEBPACK_IMPORTED_MODULE_7__["LayoutNotificationsComponent"]];
+
+      var FeatureLayoutLoaderModule = function FeatureLayoutLoaderModule() {
+        _classCallCheck(this, FeatureLayoutLoaderModule);
+      };
+
+      FeatureLayoutLoaderModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        declarations: [].concat(COMPONENTS),
+        exports: [].concat(COMPONENTS),
+        imports: [].concat(MODULES),
+        schemas: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["CUSTOM_ELEMENTS_SCHEMA"]]
+      })], FeatureLayoutLoaderModule);
+      /***/
+    },
+
+    /***/
+    "./src/app/features/feature-layout/feature-layout.routing.module.ts":
+    /*!**************************************************************************!*\
+      !*** ./src/app/features/feature-layout/feature-layout.routing.module.ts ***!
+      \**************************************************************************/
+
+    /*! exports provided: FeatureLayoutRoutingModule */
+
+    /***/
+    function srcAppFeaturesFeatureLayoutFeatureLayoutRoutingModuleTs(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony export (binding) */
+
+
+      __webpack_require__.d(__webpack_exports__, "FeatureLayoutRoutingModule", function () {
+        return FeatureLayoutRoutingModule;
+      });
+      /* harmony import */
+
+
+      var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! tslib */
+      "./node_modules/tslib/tslib.es6.js");
+      /* harmony import */
+
+
+      var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      /*! @angular/core */
+      "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+      /* harmony import */
+
+
+      var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! @angular/router */
+      "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+      /* harmony import */
+
+
+      var _layout_page_feature_layout_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      /*! ./layout-page/feature-layout.component */
+      "./src/app/features/feature-layout/layout-page/feature-layout.component.ts");
+
+      var routes = [{
+        path: 'page',
+        component: _layout_page_feature_layout_component__WEBPACK_IMPORTED_MODULE_3__["FeatureLayoutComponent"],
+        children: [{
+          path: 'home',
+          children: [{
+            path: '',
+            loadChildren: function loadChildren() {
+              return Promise.all(
+              /*! import() | features-feature-home-feature-home-loader-module */
+              [__webpack_require__.e("default~features-feature-home-feature-home-loader-module~features-feature-watch-feature-watch-loader-module"), __webpack_require__.e("features-feature-home-feature-home-loader-module")]).then(__webpack_require__.bind(null,
+              /*! @features/feature-home/feature-home.loader.module */
+              "./src/app/features/feature-home/feature-home.loader.module.ts")).then(function (module) {
+                return module.FeatureHomeLoaderModule;
+              });
+            }
+          }]
+        }, {
+          path: 'sign',
+          children: [{
+            path: '',
+            loadChildren: function loadChildren() {
+              return __webpack_require__.e(
+              /*! import() | features-feature-sign-feature-sign-loader-module */
+              "features-feature-sign-feature-sign-loader-module").then(__webpack_require__.bind(null,
+              /*! @features/feature-sign/feature-sign.loader.module */
+              "./src/app/features/feature-sign/feature-sign.loader.module.ts")).then(function (module) {
+                return module.FeatureSignLoaderModule;
+              });
+            }
+          }]
+        }, {
+          path: 'watch/:slug',
+          children: [{
+            path: '',
+            loadChildren: function loadChildren() {
+              return Promise.all(
+              /*! import() | features-feature-watch-feature-watch-loader-module */
+              [__webpack_require__.e("default~features-feature-home-feature-home-loader-module~features-feature-watch-feature-watch-loader-module"), __webpack_require__.e("features-feature-watch-feature-watch-loader-module")]).then(__webpack_require__.bind(null,
+              /*! @features/feature-watch/feature-watch.loader.module */
+              "./src/app/features/feature-watch/feature-watch.loader.module.ts")).then(function (module) {
+                return module.FeatureWatchLoaderModule;
+              });
+            }
+          }]
+        }]
+      }, {
+        path: '**',
+        redirectTo: 'page/home',
+        pathMatch: 'full'
+      }];
+
+      var FeatureLayoutRoutingModule = function FeatureLayoutRoutingModule() {
+        _classCallCheck(this, FeatureLayoutRoutingModule);
+      };
+
+      FeatureLayoutRoutingModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forChild(routes)],
+        exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
+      })], FeatureLayoutRoutingModule);
+      /***/
+    },
+
+    /***/
+    "./src/app/features/feature-layout/layout-notifications/layout-notifications.component.scss":
+    /*!**************************************************************************************************!*\
+      !*** ./src/app/features/feature-layout/layout-notifications/layout-notifications.component.scss ***!
+      \**************************************************************************************************/
+
+    /*! exports provided: default */
+
+    /***/
+    function srcAppFeaturesFeatureLayoutLayoutNotificationsLayoutNotificationsComponentScss(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony default export */
+
+
+      __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2ZlYXR1cmVzL2ZlYXR1cmUtbGF5b3V0L2xheW91dC1ub3RpZmljYXRpb25zL2xheW91dC1ub3RpZmljYXRpb25zLmNvbXBvbmVudC5zY3NzIn0= */";
+      /***/
+    },
+
+    /***/
+    "./src/app/features/feature-layout/layout-notifications/layout-notifications.component.ts":
+    /*!************************************************************************************************!*\
+      !*** ./src/app/features/feature-layout/layout-notifications/layout-notifications.component.ts ***!
+      \************************************************************************************************/
+
+    /*! exports provided: LayoutNotificationsComponent */
+
+    /***/
+    function srcAppFeaturesFeatureLayoutLayoutNotificationsLayoutNotificationsComponentTs(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony export (binding) */
+
+
+      __webpack_require__.d(__webpack_exports__, "LayoutNotificationsComponent", function () {
+        return LayoutNotificationsComponent;
+      });
+      /* harmony import */
+
+
+      var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! tslib */
+      "./node_modules/tslib/tslib.es6.js");
+      /* harmony import */
+
+
+      var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      /*! @angular/core */
+      "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+      var LayoutNotificationsComponent = /*#__PURE__*/function () {
+        function LayoutNotificationsComponent() {
+          _classCallCheck(this, LayoutNotificationsComponent);
+        }
+
+        _createClass(LayoutNotificationsComponent, [{
+          key: "ngOnInit",
+          value: function ngOnInit() {}
+        }]);
+
+        return LayoutNotificationsComponent;
+      }();
+
+      LayoutNotificationsComponent.ctorParameters = function () {
+        return [];
+      };
+
+      LayoutNotificationsComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        template: Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(
+        /*! raw-loader!./layout-notifications.component.html */
+        "./node_modules/raw-loader/dist/cjs.js!./src/app/features/feature-layout/layout-notifications/layout-notifications.component.html"))["default"],
+        styles: [Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(
+        /*! ./layout-notifications.component.scss */
+        "./src/app/features/feature-layout/layout-notifications/layout-notifications.component.scss"))["default"]]
+      })], LayoutNotificationsComponent);
+      /***/
+    },
+
+    /***/
+    "./src/app/features/feature-layout/layout-page/feature-layout.component.scss":
+    /*!***********************************************************************************!*\
+      !*** ./src/app/features/feature-layout/layout-page/feature-layout.component.scss ***!
+      \***********************************************************************************/
+
+    /*! exports provided: default */
+
+    /***/
+    function srcAppFeaturesFeatureLayoutLayoutPageFeatureLayoutComponentScss(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony default export */
+
+
+      __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2ZlYXR1cmVzL2ZlYXR1cmUtbGF5b3V0L2xheW91dC1wYWdlL2ZlYXR1cmUtbGF5b3V0LmNvbXBvbmVudC5zY3NzIn0= */";
+      /***/
+    },
+
+    /***/
+    "./src/app/features/feature-layout/layout-page/feature-layout.component.ts":
+    /*!*********************************************************************************!*\
+      !*** ./src/app/features/feature-layout/layout-page/feature-layout.component.ts ***!
+      \*********************************************************************************/
+
+    /*! exports provided: FeatureLayoutComponent */
+
+    /***/
+    function srcAppFeaturesFeatureLayoutLayoutPageFeatureLayoutComponentTs(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony export (binding) */
+
+
+      __webpack_require__.d(__webpack_exports__, "FeatureLayoutComponent", function () {
+        return FeatureLayoutComponent;
+      });
+      /* harmony import */
+
+
+      var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! tslib */
+      "./node_modules/tslib/tslib.es6.js");
+      /* harmony import */
+
+
+      var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      /*! @angular/core */
+      "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+      /* harmony import */
+
+
+      var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+      /*! @ionic/angular */
+      "./node_modules/@ionic/angular/__ivy_ngcc__/fesm2015/ionic-angular.js");
+      /* harmony import */
+
+
+      var _layout_notifications_layout_notifications_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      /*! ../layout-notifications/layout-notifications.component */
+      "./src/app/features/feature-layout/layout-notifications/layout-notifications.component.ts");
+      /* harmony import */
+
+
+      var _layout_user_layout_user_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+      /*! ../layout-user/layout-user.component */
+      "./src/app/features/feature-layout/layout-user/layout-user.component.ts");
+
+      var FeatureLayoutComponent = /*#__PURE__*/function () {
+        function FeatureLayoutComponent(popoverCtrl) {
+          _classCallCheck(this, FeatureLayoutComponent);
+
+          this.popoverCtrl = popoverCtrl;
+        }
+
+        _createClass(FeatureLayoutComponent, [{
+          key: "ngOnInit",
+          value: function ngOnInit() {}
+        }, {
+          key: "openUser",
+          value: function openUser(ev) {
+            this.popoverCtrl.create({
+              component: _layout_user_layout_user_component__WEBPACK_IMPORTED_MODULE_4__["LayoutUserComponent"],
+              animated: true,
+              backdropDismiss: true,
+              showBackdrop: true,
+              event: ev,
+              cssClass: 'jk-popover'
+            }).then(function (pop) {
+              pop.present();
+            });
+          }
+        }, {
+          key: "openNotifications",
+          value: function openNotifications(ev) {
+            this.popoverCtrl.create({
+              component: _layout_notifications_layout_notifications_component__WEBPACK_IMPORTED_MODULE_3__["LayoutNotificationsComponent"],
+              animated: true,
+              backdropDismiss: true,
+              showBackdrop: true,
+              event: ev,
+              cssClass: 'jk-popover'
+            }).then(function (pop) {
+              pop.present();
+            });
+          }
+        }]);
+
+        return FeatureLayoutComponent;
+      }();
+
+      FeatureLayoutComponent.ctorParameters = function () {
+        return [{
+          type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["PopoverController"]
+        }];
+      };
+
+      FeatureLayoutComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-feature-layout',
+        template: Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(
+        /*! raw-loader!./feature-layout.component.html */
+        "./node_modules/raw-loader/dist/cjs.js!./src/app/features/feature-layout/layout-page/feature-layout.component.html"))["default"],
+        styles: [Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(
+        /*! ./feature-layout.component.scss */
+        "./src/app/features/feature-layout/layout-page/feature-layout.component.scss"))["default"]]
+      })], FeatureLayoutComponent);
+      /***/
+    },
+
+    /***/
+    "./src/app/features/feature-layout/layout-user/layout-user.component.scss":
+    /*!********************************************************************************!*\
+      !*** ./src/app/features/feature-layout/layout-user/layout-user.component.scss ***!
+      \********************************************************************************/
+
+    /*! exports provided: default */
+
+    /***/
+    function srcAppFeaturesFeatureLayoutLayoutUserLayoutUserComponentScss(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony default export */
+
+
+      __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2ZlYXR1cmVzL2ZlYXR1cmUtbGF5b3V0L2xheW91dC11c2VyL2xheW91dC11c2VyLmNvbXBvbmVudC5zY3NzIn0= */";
+      /***/
+    },
+
+    /***/
+    "./src/app/features/feature-layout/layout-user/layout-user.component.ts":
+    /*!******************************************************************************!*\
+      !*** ./src/app/features/feature-layout/layout-user/layout-user.component.ts ***!
+      \******************************************************************************/
+
+    /*! exports provided: LayoutUserComponent */
+
+    /***/
+    function srcAppFeaturesFeatureLayoutLayoutUserLayoutUserComponentTs(module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony export (binding) */
+
+
+      __webpack_require__.d(__webpack_exports__, "LayoutUserComponent", function () {
+        return LayoutUserComponent;
+      });
+      /* harmony import */
+
+
+      var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! tslib */
+      "./node_modules/tslib/tslib.es6.js");
+      /* harmony import */
+
+
+      var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      /*! @angular/core */
+      "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+      var LayoutUserComponent = /*#__PURE__*/function () {
+        function LayoutUserComponent() {
+          _classCallCheck(this, LayoutUserComponent);
+        }
+
+        _createClass(LayoutUserComponent, [{
+          key: "ngOnInit",
+          value: function ngOnInit() {}
+        }]);
+
+        return LayoutUserComponent;
+      }();
+
+      LayoutUserComponent.ctorParameters = function () {
+        return [];
+      };
+
+      LayoutUserComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        template: Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(
+        /*! raw-loader!./layout-user.component.html */
+        "./node_modules/raw-loader/dist/cjs.js!./src/app/features/feature-layout/layout-user/layout-user.component.html"))["default"],
+        styles: [Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(
+        /*! ./layout-user.component.scss */
+        "./src/app/features/feature-layout/layout-user/layout-user.component.scss"))["default"]]
+      })], LayoutUserComponent);
+      /***/
+    }
+  }]);
+})();
+//# sourceMappingURL=features-feature-layout-feature-layout-loader-module-es5.js.map

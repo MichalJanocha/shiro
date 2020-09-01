@@ -1,39 +1,12 @@
 <ng-container>
-<ion-grid>
-    <ion-row>
-        <ion-col size-xs="12">
-            <ion-toolbar>
-                <ion-buttons slot="secondary">
-                    <ion-button size="large" shape="round">
-                        <ion-icon slot="icon-only" name="return-up-forward-outline"></ion-icon>
-                    </ion-button>
-                </ion-buttons>
-                <ion-title>Latest Anime</ion-title>
-            </ion-toolbar>
-        </ion-col>
-        <ion-col size-xs="6" size-lg="4" size-xl="2" *ngFor="let anime of allAnimes">
-            <ion-card class="jk-anime-card">
-                <div class="jk-anime-card-header">
-                    <ion-img src="https://static.posters.cz/image/750/plakaty/death-note-collage-i28406.jpg"></ion-img>
-
-                    <div class="jk-anime-card-comments">
-                        <ion-icon name="chatbox"></ion-icon>
-                        0
-                    </div >
-                    <div class="jk-anime-card-views">
-                        <ion-icon name="eye-outline"></ion-icon>
-                        {{anime.views}}
-                    </div>
-                </div>
-                <ion-card-content>
-                    <ion-card-title class="ion-text-nowrap">{{anime.name}}</ion-card-title>
-                    <p>
-                        <ion-icon name="time-outline"></ion-icon>
-                        {{anime.creation}}
-                    </p>
-                </ion-card-content>
-            </ion-card>
-        </ion-col>
-    </ion-row>
-</ion-grid>
+    <ion-grid>
+        <ion-row>
+            <ion-col size-xs="12">
+                <app-home-newest-anime [fewAnimes$]="fewAnimes$"></app-home-newest-anime>
+            </ion-col>
+            <ion-col size-xs="12" size-md="6" *ngIf="allAnimes$">
+                <app-home-random-anime [allAnimes$]="allAnimes$"></app-home-random-anime>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ng-container>

@@ -1,10 +1,9 @@
 import { Injectable, Inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
-import { Anime } from '../models/Anime.model';
-import { Observable, of, from } from 'rxjs';
-import { tap, take, concatMap } from 'rxjs/operators';
-import * as _ from 'lodash'
-import { map, takeWhile } from 'lodash';
+import { Anime, AnimeSource } from '../models/Anime.model';
+import { Observable, of } from 'rxjs';
+import { concatMap } from 'rxjs/operators';
+import * as _ from 'lodash';
 
 @Injectable({
   providedIn: 'root'
@@ -47,15 +46,19 @@ export class AnimeService {
     if(this.allAnimes$ !== null && this.allAnimes$ !== undefined){
       return this.allAnimes$.pipe(
         concatMap(anime => {
-          return of(_.take(anime, 8))
+          return of(_.take(anime, 12))
         })
       )
     }else{
       return this.fetchAllAnime().pipe(
         concatMap(anime => {
-          return of(_.take(anime, 8))
+          return of(_.take(anime, 12))
         })
       )
     }
+  }
+
+  fetchAnimeSources(animeSlug: string){
+    return this.http.get<AnimeSource[]>(`${this.apiUrl}/anime/${animeSlug}/sources`);
   }
 }

@@ -208,9 +208,10 @@ ion-item{
         overflow: hidden;
     }
 
-    &:hover{
+    &:hover, &:focus{
         --background: var(--ion-color-primary);
         color: #fff;
+        outline: none !important;
 
         ion-card-content{
             ion-icon{
@@ -236,5 +237,64 @@ ion-item{
     ion-list{
         --background: transparent;
         background-color: transparent;
+    }
+}
+
+.shiro-random-card{
+    background-color: var(--shiro-color-dark);
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    max-height: 250px;
+    @media only screen and (min-width: 768px) {
+        max-height: 300px;
+    }
+    @media only screen and (min-width: 992px) {
+        max-height: 500px;
+    }
+
+    .shiro-card-header{
+        max-width: 40%;
+        border-radius: 25px 25px 0 0;
+        overflow: hidden;
+
+        .shiro-img{
+            height: auto;
+            width: 100%;
+        }
+    }
+    .shiro-card-content{
+        max-width: 60%;
+        padding: 1.5rem;
+        max-height: 100%;
+        flex: 1;
+        // max-height: 100px;
+        overflow: auto;
+
+        h4{
+            font-size: 1.6rem;
+        }
+
+        ion-badge{
+            margin-right: 0.35rem;
+            padding: 0.4rem 0.6rem;
+            border-radius: 0.6rem;
+        }
+    }
+}
+
+.TEMP-PLAYER{
+    background-color: rgba(11, 11, 11 ,1);
+    width: 100%;
+    height: 350px;
+    border-radius: 25px;
+}
+
+.shiro-watch-tabs{
+    border-bottom: 3px solid var(--shiro-color-dark);
+
+    ion-label{
+        color: var(--ion-text-color) !important;
+        --color: var(--ion-text-color) !important;
     }
 }

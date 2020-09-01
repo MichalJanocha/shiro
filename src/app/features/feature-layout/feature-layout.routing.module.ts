@@ -30,7 +30,19 @@ const routes: Routes = [
                 ),
             },
           ],
-      }
+        },
+        {
+          path: 'watch/:slug',
+          children: [
+            {
+              path: '',
+              loadChildren: () =>
+                import('@features/feature-watch/feature-watch.loader.module').then(
+                  (module) => module.FeatureWatchLoaderModule,
+                ),
+            },
+          ],
+        },
     ]
   },
   {
